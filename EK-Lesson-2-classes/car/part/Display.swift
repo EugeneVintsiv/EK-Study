@@ -6,14 +6,8 @@
 import Foundation
 
 class Display {
-    //    Incapsulation:
-    private let car: Car
 
-    init(car: Car) {
-        self.car = car
-    }
-
-    func showStatus() {
-        print("On Display: \n Car model: \(self.car.model) \n engine status is \(self.car.engine.onOffState) \n speed is \(self.car.engine.currentSpeed)")
+    func showStatus(car: Car) {
+        print("On Display: \n Car model: \(car.model) \n engine status is \(car.engine.onOffState) \n speed is \(car.engine.currentSpeed)")
     }
 }

@@ -6,33 +6,14 @@
 import Foundation
 
 class Car: Vehicle {
-    public let engine: Engine
     public let model: String
-//    Incapsulation:
-    private var display: Display? //used "nilable" and "var" cuz create Display in constructor.
+    public let engine: Engine
+    private var display: Display
 
-/*
-Question: what is the better way.
-    Found a solution like:
-private var _display: Display!
-    var display: Display {
-        return _display
-    }
-    init(model: String, engine: Engine) {
-        self._display = Display(car: self)
-    }
-
-    but not like it, cuz much code used for init const
-*/
-    convenience init(model: String) {
-        self.init(model: model, engine: Engine())
-    }
-
-//engine for possible scalability and
-    init(model: String, engine: Engine) {
+    init(model: String, engine: Engine = Engine(), _ display: Display = Display()) {
         self.engine = engine
         self.model = model
-        self.display = Display(car: self)
+        self.display = display
     }
 
     func toggleEngine(engineState state: OnOffStatus) {
@@ -48,7 +29,7 @@ private var _display: Display!
         } catch {
             print("Unable do go faster, cuz engine is OFF, trying to turn Engine ON and repeat go faster.")
             toggleEngine(engineState: OnOffStatus.ON)
-//            bad idea
+//            bad idea to ignore try
             try! self.engine.goFaster()
             print("Doing faster, New speed is: \(self.engine.currentSpeed)")
         }
@@ -69,6 +50,6 @@ private var _display: Display!
     }
 
     func showStatusOnDisplay() {
-        self.display?.showStatus()
+        self.display.showStatus(car: self)
     }
 }
