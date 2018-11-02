@@ -1,23 +1,16 @@
 //
-// Created by Eugene on 29.10.18.
+// Created by Eugene on 02.11.18.
 // Copyright (c) 2018 Eugene. All rights reserved.
 //
 
 import Foundation
 
-protocol Vehicle {
-    func toggleEngine(engineState state: OnOffStatus)
-    func goFaster()
-    func goSlower()
-    func doStop()
-    func showStatusOnDisplay()
-}
-
-class Car : Vehicle {
+class Car: Vehicle {
     public let engine: Engine
     public let model: String
 //    Incapsulation:
     private var display: Display? //used "nilable" and "var" cuz create Display in constructor.
+
 /*
 Question: what is the better way.
     Found a solution like:
@@ -34,6 +27,7 @@ private var _display: Display!
     convenience init(model: String) {
         self.init(model: model, engine: Engine())
     }
+
 //engine for possible scalability and
     init(model: String, engine: Engine) {
         self.engine = engine
@@ -59,6 +53,7 @@ private var _display: Display!
             print("Doing faster, New speed is: \(self.engine.currentSpeed)")
         }
     }
+
     func goSlower() {
         do {
             try self.engine.goSlower()
@@ -77,30 +72,3 @@ private var _display: Display!
         self.display?.showStatus()
     }
 }
-
-
-//Inheritance:
-class Traktor: Car {
-    private let ladle: Ladle = Ladle.init()
-
-//    Closure definition
-    func doActionViaClosure(closure: () -> Void) {
-        closure()
-    }
-    func doAction(ladleCommand: LadleCommand...) {
-        for command in ladleCommand {
-//            in case enum method, just use command.method()
-            self.ladle.doAction(command: command)
-        }
-    }
-
-    override func toggleEngine(engineState state: OnOffStatus) {
-        self.engine.toggleEngine(onOffState: state)
-
-        let beforeLadleChange = self.ladle.ladleStatus
-        self.ladle.toggleStatus()
-        print("Changed ladle state from \(beforeLadleChange) to \(self.ladle.ladleStatus)")
-    }
-
-}
-

@@ -1,23 +1,18 @@
 //
-// Created by Eugene on 30.10.18.
+// Created by Eugene on 02.11.18.
 // Copyright (c) 2018 Eugene. All rights reserved.
 //
 
 import Foundation
 
-enum LadleCommand {
-    case RIGHT
-    case LEFT
-    case UP
-    case DOWN
-}
-
 class Ladle {
     //    Incapsulation:
     public private(set) var ladleStatus: OnOffStatus = OnOffStatus.OFF
+//    public private(set) var ladleStatus1: Bool = false
 
     func toggleStatus() {
         self.ladleStatus = self.ladleStatus == OnOffStatus.OFF ? OnOffStatus.ON : OnOffStatus.OFF
+//        self.ladleStatus1 = !self.ladleStatus1 ? true : false
     }
 
 //    May be mode into enum

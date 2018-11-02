@@ -1,14 +1,9 @@
 //
-// Created by Eugene on 29.10.18.
+// Created by Eugene on 02.11.18.
 // Copyright (c) 2018 Eugene. All rights reserved.
 //
 
 import Foundation
-
-enum OnOffStatus: String {
-    case ON
-    case OFF
-}
 
 class Engine {
 //    Incapsulation:
@@ -53,18 +48,5 @@ class Engine {
 
     private func isEngineTurnedOn() throws {
 
-    }
-}
-
-class Display {
-    //    Incapsulation:
-    private let car: Car
-
-    init(car: Car) {
-        self.car = car
-    }
-
-    func showStatus() {
-        print("On Display: \n Car model: \(self.car.model) \n engine status is \(self.car.engine.onOffState) \n speed is \(self.car.engine.currentSpeed)")
     }
 }
