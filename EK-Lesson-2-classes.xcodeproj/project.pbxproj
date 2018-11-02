@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44DB707021875FD60091BF55 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB706F21875FD60091BF55 /* main.swift */; };
+		7C5F71593B3B8F034A0D780D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7CA4A6BF7893B9D04648 /* Errors.swift */; };
+		7C5F732485BBAA4EF7319FCF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F77EDC0E1A148B909CE9B /* main.swift */; };
+		7C5F737DCAF9507B1C2423F4 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7B03EEB2D58D8312466B /* Closures.swift */; };
+		7C5F78E49D09499A2DFF4D11 /* TraktorParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F76537E6B8112D3FEBF46 /* TraktorParts.swift */; };
+		7C5F7C9CFB2DB3513D48B6D0 /* CarParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F77FF8CC30C3626FC4639 /* CarParts.swift */; };
+		7C5F7E8E0B2050C9154921EB /* Cars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7B4E18D01E5F8E53476A /* Cars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +29,12 @@
 
 /* Begin PBXFileReference section */
 		44DB706C21875FD60091BF55 /* EK-Lesson-2-classes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "EK-Lesson-2-classes"; sourceTree = BUILT_PRODUCTS_DIR; };
-		44DB706F21875FD60091BF55 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7C5F76537E6B8112D3FEBF46 /* TraktorParts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TraktorParts.swift; path = car/TraktorParts.swift; sourceTree = "<group>"; };
+		7C5F77EDC0E1A148B909CE9B /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7C5F77FF8CC30C3626FC4639 /* CarParts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarParts.swift; path = car/CarParts.swift; sourceTree = "<group>"; };
+		7C5F7B03EEB2D58D8312466B /* Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = closure/Closures.swift; sourceTree = "<group>"; };
+		7C5F7B4E18D01E5F8E53476A /* Cars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cars.swift; path = car/Cars.swift; sourceTree = "<group>"; };
+		7C5F7CA4A6BF7893B9D04648 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = car/Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +67,12 @@
 		44DB706E21875FD60091BF55 /* EK-Lesson-2-classes */ = {
 			isa = PBXGroup;
 			children = (
-				44DB706F21875FD60091BF55 /* main.swift */,
+				7C5F7CA4A6BF7893B9D04648 /* Errors.swift */,
+				7C5F76537E6B8112D3FEBF46 /* TraktorParts.swift */,
+				7C5F7B4E18D01E5F8E53476A /* Cars.swift */,
+				7C5F77FF8CC30C3626FC4639 /* CarParts.swift */,
+				7C5F7B03EEB2D58D8312466B /* Closures.swift */,
+				7C5F77EDC0E1A148B909CE9B /* main.swift */,
 			);
 			path = "EK-Lesson-2-classes";
 			sourceTree = "<group>";
@@ -119,7 +134,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44DB707021875FD60091BF55 /* main.swift in Sources */,
+				7C5F71593B3B8F034A0D780D /* Errors.swift in Sources */,
+				7C5F78E49D09499A2DFF4D11 /* TraktorParts.swift in Sources */,
+				7C5F7E8E0B2050C9154921EB /* Cars.swift in Sources */,
+				7C5F7C9CFB2DB3513D48B6D0 /* CarParts.swift in Sources */,
+				7C5F737DCAF9507B1C2423F4 /* Closures.swift in Sources */,
+				7C5F732485BBAA4EF7319FCF /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
