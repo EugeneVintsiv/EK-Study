@@ -6,7 +6,7 @@
 import Foundation
 
 protocol Vehicle {
-    func toggleEngine(engineState state: OnOffStatus)
+    func toggleEngine(engineState state: Bool)
     func goFaster()
     func goSlower()
     func doStop()

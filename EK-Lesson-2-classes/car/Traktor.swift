@@ -21,7 +21,7 @@ class Traktor: Car {
         }
     }
 
-    override func toggleEngine(engineState state: OnOffStatus) {
+    override func toggleEngine(engineState state: Bool) {
         super.toggleEngine(engineState: state)
         toggleLadle()
 

@@ -7,12 +7,10 @@ import Foundation
 
 class Ladle {
     //    Incapsulation:
-    private(set) var ladleStatus: OnOffStatus = OnOffStatus.off
-//    public private(set) var ladleStatus1: Bool = false
+    private(set) var ladleStatus: Bool = false
 
     func toggleStatus() {
-        self.ladleStatus = self.ladleStatus == OnOffStatus.off ? OnOffStatus.on : OnOffStatus.off
-//        self.ladleStatus1 = !self.ladleStatus1 ? true : false
+        self.ladleStatus = !self.ladleStatus ? true : false
     }
 
 //    May be mode into enum
