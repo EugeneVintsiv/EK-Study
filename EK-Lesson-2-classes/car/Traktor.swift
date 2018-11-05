@@ -17,7 +17,7 @@ class Traktor: Car {
     func doAction(ladleCommand: LadleCommand...) {
         for command in ladleCommand {
 //            in case enum method, just use command.method()
-            self.ladle.doAction(command: command)
+            ladle.doAction(command: command)
         }
     }
 
@@ -28,9 +28,9 @@ class Traktor: Car {
     }
 
     private func toggleLadle() {
-        let beforeLadleChange = self.ladle.ladleStatus
-        self.ladle.toggleStatus()
-        print("Changed ladle state from \(beforeLadleChange) to \(self.ladle.ladleStatus)")
+        let beforeLadleChange = ladle.ladleStatus
+        ladle.toggleStatus()
+        print("Changed ladle state from \(beforeLadleChange) to \(ladle.ladleStatus)")
     }
 
 }

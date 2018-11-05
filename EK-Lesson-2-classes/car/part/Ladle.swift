@@ -10,7 +10,7 @@ class Ladle {
     private(set) var ladleStatus: Bool = false
 
     func toggleStatus() {
-        self.ladleStatus = !self.ladleStatus ? true : false
+        ladleStatus = !ladleStatus ? true : false
     }
 
 //    May be mode into enum

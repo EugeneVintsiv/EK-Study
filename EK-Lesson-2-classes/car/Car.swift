@@ -17,39 +17,39 @@ class Car: Vehicle {
     }
 
     func toggleEngine(engineState state: Bool) {
-        let beforeChange = self.engine.onOffState
-        self.engine.toggleEngine(onOffState: state)
-        print("Changed engine state from \(beforeChange) to \(self.engine.onOffState)")
+        let beforeChange = engine.onOffState
+        engine.toggleEngine(onOffState: state)
+        print("Changed engine state from \(beforeChange) to \(engine.onOffState)")
     }
 
     func goFaster() {
         do {
-            try self.engine.goFaster()
-            print("Doing faster, New speed is: \(self.engine.currentSpeed)")
+            try engine.goFaster()
+            print("Doing faster, New speed is: \(engine.currentSpeed)")
         } catch {
             print("Unable do go faster, cuz engine is OFF, trying to turn Engine ON and repeat go faster.")
             toggleEngine(engineState: true)
 //            bad idea to ignore try
-            try! self.engine.goFaster()
-            print("Doing faster, New speed is: \(self.engine.currentSpeed)")
+            try! engine.goFaster()
+            print("Doing faster, New speed is: \(engine.currentSpeed)")
         }
     }
 
     func goSlower() {
         do {
-            try self.engine.goSlower()
-            print("Doing slowly, New speed is: \(self.engine.currentSpeed)")
+            try engine.goSlower()
+            print("Doing slowly, New speed is: \(engine.currentSpeed)")
         } catch {
             print("Unable do go slower, cuz engine is OFF. Do not do anything, please relax.")
         }
     }
 
     func doStop() {
-        self.engine.doStop()
+        engine.doStop()
         print("Doing slower to 0 and turned engine OFF.")
     }
 
     func showStatusOnDisplay() {
-        self.display.showStatus(car: self)
+        display.showStatus(car: self)
     }
 }

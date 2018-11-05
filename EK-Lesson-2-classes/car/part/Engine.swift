@@ -17,31 +17,31 @@ class Engine {
         if currentSpeed > 0 && !state {
             print("Unable to turn off engine when speed > 0")
         }
-        self.onOffState = state;
+        onOffState = state;
     }
 
     func goFaster() throws {
         if !onOffState {
             throw CarError.isNotTurnedOff
         }
-        let speedToSet: Int = self.currentSpeed + self.speedStep
-        self.currentSpeed = speedToSet > maxSpeed ? maxSpeed : speedToSet
+        let speedToSet: Int = currentSpeed + speedStep
+        currentSpeed = speedToSet > maxSpeed ? maxSpeed : speedToSet
     }
 
     func goSlower() throws {
         if !onOffState {
             throw CarError.isNotTurnedOff
         }
-        let speedToSet: Int = self.currentSpeed - self.speedStep
-        self.currentSpeed = speedToSet < 0 ? 0 : speedToSet
+        let speedToSet: Int = currentSpeed - speedStep
+        currentSpeed = speedToSet < 0 ? 0 : speedToSet
     }
 
     func doStop() {
-        for _ in stride(from: self.currentSpeed, to: 0, by: -1 * self.speedStep) {
+        for _ in stride(from: currentSpeed, to: 0, by: -1 * speedStep) {
             sleep(1)
-            let speedToSet: Int = self.currentSpeed - self.speedStep
-            self.currentSpeed = speedToSet < 0 ? 0 : speedToSet
-            print("Doing stop, new speed: \(self.currentSpeed)")
+            let speedToSet: Int = currentSpeed - speedStep
+            currentSpeed = speedToSet < 0 ? 0 : speedToSet
+            print("Doing stop, new speed: \(currentSpeed)")
         }
         toggleEngine(onOffState: false)
     }
