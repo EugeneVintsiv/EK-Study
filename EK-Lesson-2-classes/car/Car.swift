@@ -6,8 +6,8 @@
 import Foundation
 
 class Car: Vehicle {
-    public let model: String
-    public let engine: Engine
+    let model: String
+    let engine: Engine
     private var display: Display
 
     init(model: String, engine: Engine = Engine(), _ display: Display = Display()) {

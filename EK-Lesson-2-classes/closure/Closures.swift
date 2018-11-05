@@ -6,7 +6,7 @@
 import Foundation
 
 fileprivate class Item {
-    public private(set) var sortField: Int = 0
+    private(set) var sortField: Int = 0
 
     init(_ sortValue: Int) {
         self.sortField = sortValue

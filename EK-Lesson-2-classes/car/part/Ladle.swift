@@ -7,7 +7,7 @@ import Foundation
 
 class Ladle {
     //    Incapsulation:
-    public private(set) var ladleStatus: OnOffStatus = OnOffStatus.off
+    private(set) var ladleStatus: OnOffStatus = OnOffStatus.off
 //    public private(set) var ladleStatus1: Bool = false
 
     func toggleStatus() {

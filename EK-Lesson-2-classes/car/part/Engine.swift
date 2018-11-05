@@ -7,9 +7,9 @@ import Foundation
 
 class Engine {
 //    Incapsulation:
-    public private(set) var onOffState: OnOffStatus = OnOffStatus.off
+    private(set) var onOffState: OnOffStatus = OnOffStatus.off
 //    Incapsulation:
-    public private(set) var currentSpeed: Int = 0
+    private(set) var currentSpeed: Int = 0
     let maxSpeed: Int = 160
     private let speedStep = 30;
 

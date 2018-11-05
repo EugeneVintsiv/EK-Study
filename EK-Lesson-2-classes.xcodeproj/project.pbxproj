@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		7C5F704BBF360025F28864E2 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7DFB8F9701B488DD5D57 /* Engine.swift */; };
 		7C5F712A3567C5350ACD6027 /* Ladle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F76409CFAA85AFB92BE1D /* Ladle.swift */; };
-		7C5F719D321924DEB4C93BFF /* Traktor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7F809FCA02B7EC7C9314 /* Traktor.swift */; };
 		7C5F71FD0A2F468B04D73917 /* OnOffStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F70D4BBA5B29DE663684F /* OnOffStatus.swift */; };
 		7C5F732485BBAA4EF7319FCF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F77EDC0E1A148B909CE9B /* main.swift */; };
 		7C5F737DCAF9507B1C2423F4 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7B03EEB2D58D8312466B /* Closures.swift */; };
 		7C5F743A4051F05A2D6D1E64 /* LadleCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7EE342ECE2A051694E3C /* LadleCommand.swift */; };
+		7C5F75C690CE83D175A46E55 /* Traktor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F72054766763EF50833D5 /* Traktor.swift */; };
 		7C5F760B2CE6986A882AE736 /* CarError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7096057FDA73C8D1E0E8 /* CarError.swift */; };
 		7C5F77C269586DBD50FCE54C /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F756AD42D35D3731D2D9D /* Display.swift */; };
 		7C5F793F419657A475CE3B25 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F783E87B5481537230032 /* Vehicle.swift */; };
@@ -36,6 +36,7 @@
 		44DB706C21875FD60091BF55 /* EK-Lesson-2-classes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "EK-Lesson-2-classes"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5F7096057FDA73C8D1E0E8 /* CarError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarError.swift; path = car/error/CarError.swift; sourceTree = "<group>"; };
 		7C5F70D4BBA5B29DE663684F /* OnOffStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnOffStatus.swift; path = car/enum/OnOffStatus.swift; sourceTree = "<group>"; };
+		7C5F72054766763EF50833D5 /* Traktor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Traktor.swift; path = car/Traktor.swift; sourceTree = "<group>"; };
 		7C5F756AD42D35D3731D2D9D /* Display.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Display.swift; path = car/part/Display.swift; sourceTree = "<group>"; };
 		7C5F76409CFAA85AFB92BE1D /* Ladle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ladle.swift; path = car/part/Ladle.swift; sourceTree = "<group>"; };
 		7C5F767307CBFDC9CD6E91F4 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Car.swift; path = car/Car.swift; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		7C5F7B03EEB2D58D8312466B /* Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = closure/Closures.swift; sourceTree = "<group>"; };
 		7C5F7DFB8F9701B488DD5D57 /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Engine.swift; path = car/part/Engine.swift; sourceTree = "<group>"; };
 		7C5F7EE342ECE2A051694E3C /* LadleCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LadleCommand.swift; path = car/enum/LadleCommand.swift; sourceTree = "<group>"; };
-		7C5F7F809FCA02B7EC7C9314 /* Traktor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Traktor.swift; path = car/Traktor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +84,10 @@
 				7C5F76409CFAA85AFB92BE1D /* Ladle.swift */,
 				7C5F783E87B5481537230032 /* Vehicle.swift */,
 				7C5F767307CBFDC9CD6E91F4 /* Car.swift */,
-				7C5F7F809FCA02B7EC7C9314 /* Traktor.swift */,
 				7C5F7EE342ECE2A051694E3C /* LadleCommand.swift */,
 				7C5F70D4BBA5B29DE663684F /* OnOffStatus.swift */,
 				7C5F7096057FDA73C8D1E0E8 /* CarError.swift */,
+				7C5F72054766763EF50833D5 /* Traktor.swift */,
 			);
 			path = "EK-Lesson-2-classes";
 			sourceTree = "<group>";
@@ -156,10 +156,10 @@
 				7C5F712A3567C5350ACD6027 /* Ladle.swift in Sources */,
 				7C5F793F419657A475CE3B25 /* Vehicle.swift in Sources */,
 				7C5F7E25F678B0B927F0DB94 /* Car.swift in Sources */,
-				7C5F719D321924DEB4C93BFF /* Traktor.swift in Sources */,
 				7C5F743A4051F05A2D6D1E64 /* LadleCommand.swift in Sources */,
 				7C5F71FD0A2F468B04D73917 /* OnOffStatus.swift in Sources */,
 				7C5F760B2CE6986A882AE736 /* CarError.swift in Sources */,
+				7C5F75C690CE83D175A46E55 /* Traktor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
