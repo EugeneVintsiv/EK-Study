@@ -28,12 +28,12 @@ private func doTractorActions(traktor: Traktor) {
     doActionsWithCar(car: traktor)
 
     print("Traktor interact with ladle via method call")
-    traktor.doAction(ladleCommand: LadleCommand.UP, LadleCommand.UP, LadleCommand.RIGHT, LadleCommand.RIGHT, LadleCommand.LEFT, LadleCommand.DOWN)
+    traktor.doAction(ladleCommand: LadleCommand.up, LadleCommand.up, LadleCommand.right, LadleCommand.right, LadleCommand.left, LadleCommand.down)
 
     print("Do Actions with Traktor as a closure")
 //    Closure usage
     traktor.doActionViaClosure(closure: {
-        traktor.doAction(ladleCommand: LadleCommand.UP, LadleCommand.UP, LadleCommand.RIGHT, LadleCommand.RIGHT, LadleCommand.LEFT, LadleCommand.DOWN)
+        traktor.doAction(ladleCommand: LadleCommand.up, LadleCommand.up, LadleCommand.right, LadleCommand.right, LadleCommand.left, LadleCommand.down)
     })
 }
 

@@ -28,7 +28,7 @@ class Car: Vehicle {
             print("Doing faster, New speed is: \(self.engine.currentSpeed)")
         } catch {
             print("Unable do go faster, cuz engine is OFF, trying to turn Engine ON and repeat go faster.")
-            toggleEngine(engineState: OnOffStatus.ON)
+            toggleEngine(engineState: OnOffStatus.on)
 //            bad idea to ignore try
             try! self.engine.goFaster()
             print("Doing faster, New speed is: \(self.engine.currentSpeed)")

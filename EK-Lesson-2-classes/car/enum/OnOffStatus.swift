@@ -6,6 +6,6 @@
 import Foundation
 
 enum OnOffStatus: String {
-    case ON
-    case OFF
+    case on
+    case off
 }

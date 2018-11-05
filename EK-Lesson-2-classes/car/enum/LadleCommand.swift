@@ -6,8 +6,8 @@
 import Foundation
 
 enum LadleCommand {
-    case RIGHT
-    case LEFT
-    case UP
-    case DOWN
+    case right
+    case left
+    case up
+    case down
 }

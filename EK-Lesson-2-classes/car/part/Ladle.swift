@@ -7,24 +7,24 @@ import Foundation
 
 class Ladle {
     //    Incapsulation:
-    public private(set) var ladleStatus: OnOffStatus = OnOffStatus.OFF
+    public private(set) var ladleStatus: OnOffStatus = OnOffStatus.off
 //    public private(set) var ladleStatus1: Bool = false
 
     func toggleStatus() {
-        self.ladleStatus = self.ladleStatus == OnOffStatus.OFF ? OnOffStatus.ON : OnOffStatus.OFF
+        self.ladleStatus = self.ladleStatus == OnOffStatus.off ? OnOffStatus.on : OnOffStatus.off
 //        self.ladleStatus1 = !self.ladleStatus1 ? true : false
     }
 
 //    May be mode into enum
     func doAction(command ladleCommand: LadleCommand) {
         switch ladleCommand {
-        case .RIGHT:
+        case .right:
             print("Turn Ladle Right.")
-        case .LEFT:
+        case .left:
             print("Turn Ladle Left")
-        case .UP:
+        case .up:
             print("Move Ladle Up")
-        case .DOWN:
+        case .down:
             print("Move Ladle Down")
 //                do not need default, cuz all cases defined
         }

@@ -7,21 +7,21 @@ import Foundation
 
 class Engine {
 //    Incapsulation:
-    public private(set) var onOffState: OnOffStatus = OnOffStatus.OFF
+    public private(set) var onOffState: OnOffStatus = OnOffStatus.off
 //    Incapsulation:
     public private(set) var currentSpeed: Int = 0
     let maxSpeed: Int = 160
     private let speedStep = 30;
 
     func toggleEngine(onOffState state: OnOffStatus) {
-        if (currentSpeed > 0 && state == OnOffStatus.OFF) {
+        if (currentSpeed > 0 && state == OnOffStatus.off) {
             print("Unable to turn off engine when speed > 0")
         }
         self.onOffState = state;
     }
 
     func goFaster() throws {
-        if (onOffState == OnOffStatus.OFF) {
+        if (onOffState == OnOffStatus.off) {
             throw CarError.isNotTurnedOff
         }
         let speedToSet: Int = self.currentSpeed + self.speedStep
@@ -29,7 +29,7 @@ class Engine {
     }
 
     func goSlower() throws {
-        if (onOffState == OnOffStatus.OFF) {
+        if (onOffState == OnOffStatus.off) {
             throw CarError.isNotTurnedOff
         }
         let speedToSet: Int = self.currentSpeed - self.speedStep
@@ -43,7 +43,7 @@ class Engine {
             self.currentSpeed = speedToSet < 0 ? 0 : speedToSet
             print("Doing stop, new speed: \(self.currentSpeed)")
         }
-        toggleEngine(onOffState: OnOffStatus.OFF)
+        toggleEngine(onOffState: OnOffStatus.off)
     }
 
     private func isEngineTurnedOn() throws {
