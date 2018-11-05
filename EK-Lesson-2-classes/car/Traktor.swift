@@ -22,7 +22,7 @@ class Traktor: Car {
     }
 
     override func toggleEngine(engineState state: OnOffStatus) {
-        self.engine.toggleEngine(onOffState: state)
+        super.toggleEngine(engineState: state)
 
         let beforeLadleChange = self.ladle.ladleStatus
         self.ladle.toggleStatus()
