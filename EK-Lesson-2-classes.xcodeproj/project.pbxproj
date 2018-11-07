@@ -12,6 +12,7 @@
 		7C5F732485BBAA4EF7319FCF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F77EDC0E1A148B909CE9B /* main.swift */; };
 		7C5F737DCAF9507B1C2423F4 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7B03EEB2D58D8312466B /* Closures.swift */; };
 		7C5F743A4051F05A2D6D1E64 /* LadleCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7EE342ECE2A051694E3C /* LadleCommand.swift */; };
+		7C5F74729D525BA1A823098D /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7FF4BAD74D36438632F9 /* Readme.md */; };
 		7C5F75C690CE83D175A46E55 /* Traktor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F72054766763EF50833D5 /* Traktor.swift */; };
 		7C5F760B2CE6986A882AE736 /* CarError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7096057FDA73C8D1E0E8 /* CarError.swift */; };
 		7C5F77C269586DBD50FCE54C /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F756AD42D35D3731D2D9D /* Display.swift */; };
@@ -43,6 +44,7 @@
 		7C5F7B03EEB2D58D8312466B /* Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = closure/Closures.swift; sourceTree = "<group>"; };
 		7C5F7DFB8F9701B488DD5D57 /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Engine.swift; path = car/part/Engine.swift; sourceTree = "<group>"; };
 		7C5F7EE342ECE2A051694E3C /* LadleCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LadleCommand.swift; path = car/enum/LadleCommand.swift; sourceTree = "<group>"; };
+		7C5F7FF4BAD74D36438632F9 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				44DB706E21875FD60091BF55 /* EK-Lesson-2-classes */,
 				44DB706D21875FD60091BF55 /* Products */,
+				7C5F7FF4BAD74D36438632F9 /* Readme.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +159,7 @@
 				7C5F743A4051F05A2D6D1E64 /* LadleCommand.swift in Sources */,
 				7C5F760B2CE6986A882AE736 /* CarError.swift in Sources */,
 				7C5F75C690CE83D175A46E55 /* Traktor.swift in Sources */,
+				7C5F74729D525BA1A823098D /* Readme.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
